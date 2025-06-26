@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern CV</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1000px;
+      margin: 40px auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      background: white;
+    }
+
+    .left {
+      background-color: #2c3e50;
+      color: white;
+      width: 35%;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    .left img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .left h2 {
+      margin: 10px 0 5px;
+    }
+
+    .left p {
+      font-size: 14px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      border-bottom: 1px solid white;
+      padding-bottom: 5px;
+    }
+
+    .left ul {
+      list-style: none;
+      padding-left: 0;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .right {
+      width: 65%;
+      padding: 30px;
+    }
+
+    .right h2 {
+      font-size: 20px;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .right p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .experience, .education {
+      margin-top: 30px;
+    }
+
+    .job, .edu {
+      margin-bottom: 20px;
+    }
+
+    .job-title, .edu-title {
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .date {
+      float: right;
+      font-size: 13px;
+      color: #666;
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left, .right {
+        width: 100%;
+      }
+
+      .left {
+        text-align: center;
+      }
+
+      .date {
+        float: none;
+        display: block;
+        margin-top: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- LEFT COLUMN -->
+    <div class="left">
+      <img src="https://raw.githubusercontent.com/YouWDH/ProfPic/refs/heads/main/profile.webp" alt="Profile Photo">
+      <h2>Wandana Herath</h2>
+      <p>Software Engineer</p>
+
+      <div class="section-title">Contact Details</div>
+      <ul>
+        <li>+94 712345678</li>
+        <li>wandanaherath.wdh@gmail.com</li>
+        <li>Mihinthale,Anuradhapura,Sri Lanka</li>
+      </ul>
+
+      <div class="section-title">Skills</div>
+      <ul>
+        <li>SQL Database Management</li>
+        <li>Linux/Unix Command Line</li>
+        <li>Python</li>
+        <li>Java</li>
+      </ul>
+
+      <div class="section-title">Languages</div>
+      <ul>
+        <li>English: Proficient</li>
+		<li>Sinhala: Proficient</li>
+		<li>Tamil: Intermediate</li>
+      </ul>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="right">
+      <h2>Profile</h2>
+      <p>I am a software engineer with experience in a variety of programming languages and a track record of delivering high-quality code. I am skilled in problem-solving and have a strong background in computer science. I am a strong communicator and enjoy working collaboratively with others.</p>
+
+      <div class="experience">
+        <h2>Work Experience</h2>
+
+        <div class="job">
+          <span class="job-title">Senior Software Developer</span>
+          <span class="date">Jan 2021 – Dec 2022</span>
+          <div class="clear"></div>
+          <p>CodeCraft Innovations – India</p>
+          <ul>
+            <li>Developed and maintained software using Java, Python, and C++</li>
+            <li>Led cross-functional teams to deliver successful software projects</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <span class="job-title">Web Developer</span>
+          <span class="date">Jan 2020 – Dec 2020</span>
+          <div class="clear"></div>
+          <p>PixelWave Solutions-Sri Lanka</p>
+          <ul>
+            <li>Developed and maintained various web applications using HTML, CSS, JavaScript, and PHP</li>
+            <li>Worked with teams to gather requirements and design user interfaces</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="education">
+        <h2>Education</h2>
+
+        <div class="edu">
+          <span class="edu-title">Masters in Software Engineering</span>
+          <span class="date">Jan 2019 – Dec 2020</span>
+          <div class="clear"></div>
+          <p>University of the ABC</p>
+        </div>
+
+        <div class="edu">
+          <span class="edu-title">Bachelors in Computer Science</span>
+          <span class="date">Jan 2015 – Dec 2018</span>
+          <div class="clear"></div>
+          <p>University of Jaffna</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
